@@ -1,0 +1,4 @@
+[submodule "sub/h5-demo"]
+	path = sub/h5-demo
+	url = git@gitee.com:heythanks/h5-demo.git
+	branch = feature-flexible
