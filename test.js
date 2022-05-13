@@ -1,8 +1,8 @@
 const Submodule = require('./lib/index')
 const subInstance = new Submodule()
-const isDelete = 0
+const isDelete = 1
 isDelete && subInstance.delete({
-  reposPath: 'sub/h5-demo',
+  reposPath: 'sub/koa2',
   callback: () => {
     console.log(2222)
   }
@@ -12,14 +12,14 @@ isDelete && subInstance.delete({
   console.log(err, 'error', __filename)
 })
 !isDelete && subInstance.add({
-  reposPath: 'sub/h5-demo',
-  gitAddress: 'git@gitee.com:heythanks/h5-demo.git',
-  gitBranch: 'feature-flexible',
+  reposPath: 'sub/koa2',
+  gitAddress: 'git@github.com:koajs/koa.git',
+  gitBranch: 'master',
   callback: () => {
     console.log(3333)
   }
 }).then((res) => {
-  console.log(res, 'ressss')
+  console.log(__filename, res, 'ressss')
 }).catch((err) => {
   console.log(__filename, err, 'error')
 })

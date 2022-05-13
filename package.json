@@ -1,18 +1,28 @@
 {
   "name": "gitsubmodule",
   "version": "1.0.0",
-  "description": "#### Description git 仓库的submodule处理sdk",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "gitsubmodule contains a constructor to add or delete git submodule",
+  "engines": {
+    "node": ">=12"
   },
+  "keywords": [
+    "git",
+    "submodule"
+  ],
+  "main": "./lib/index.js",
   "repository": {
     "type": "git",
     "url": "git@gitee.com:heythanks/gitsubmodule.git"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "rollup": "^2.72.1"
+  "author": "<luochan.lc@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/_mocha test/test.js --timeout 10000"
+  },
+  "dependencies": {
+    "mocha": "^10.0.0"
+  },
+  "mocha": {
+    "testEnvironment": "node"
   }
 }
