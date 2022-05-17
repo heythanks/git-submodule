@@ -1,7 +1,7 @@
 {
-  "name": "gitsubmodule",
+  "name": "git-submodule",
   "version": "1.0.0",
-  "description": "gitsubmodule contains a constructor to add or delete git submodule",
+  "description": "git-submodule contains a constructor to add or delete git submodule",
   "engines": {
     "node": ">=12"
   },
@@ -12,7 +12,7 @@
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git@gitee.com:heythanks/gitsubmodule.git"
+    "url": "git@gitee.com:heythanks/git-submodule.git"
   },
   "author": "<luochan.lc@qq.com>",
   "license": "MIT",
