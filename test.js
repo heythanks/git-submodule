@@ -15,7 +15,7 @@ const isDelete = 1
 isDelete && subInstance.delete({
   reposPath: 'sub/koa2'
 }).then(res => {
-  console.log(res, 'delete success')
+  console.log('successResponse', res)
 }).catch(err => {
-  console.log(err, 'delete error')
+  console.log('errorResponse', err)
 })

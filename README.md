@@ -1,8 +1,8 @@
-# gitsubmodule
+# git-submodule
 
 #### Installation
 ---
-gitsubmodule requires node v7.6.0 or higher for ES2015 and async function support.
+git-submodule requires node v7.6.0 or higher for ES2015 and async function support.
 ```
 yarn add git-submodule
 ```
@@ -10,7 +10,7 @@ yarn add git-submodule
 #### Usage
 ---
 ```
-const Submodule = require('gitsubmodule');
+const Submodule = require('git-submodule');
 const subInstance = new Submodule();
 // delete git submodule
 subInstance.delete({
