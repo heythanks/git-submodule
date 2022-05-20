@@ -1,6 +1,6 @@
 {
   "name": "git-submodule",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "git-submodule contains a constructor to add or delete git submodule",
   "engines": {
     "node": ">=12"
