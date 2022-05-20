@@ -3,6 +3,9 @@
 #### Installation
 ---
 gitsubmodule requires node v7.6.0 or higher for ES2015 and async function support.
+```
+yarn add git-submodule
+```
 
 #### Usage
 ---
@@ -12,29 +15,27 @@ const subInstance = new Submodule();
 // delete git submodule
 subInstance.delete({
   reposPath: 'sub/koa2',
-  callback: () => {
-    console.log(2222)
-  }
 }).then(res => {
-  console.log(res, 'success', __filename)
+  console.log('git submodule delete success', res)
 }).catch(err => {
-  console.log(err, 'error', __filename)
+  console.log('git submodule delete fail', err)
 });
+
 // add git submodule
 subInstance.add({
   reposPath: 'sub/koa2',
   gitAddress: 'git@github.com:koajs/koa.git',
   gitBranch: 'master',
-  callback: () => {
-    console.log(3333)
-  }
 }).then((res) => {
-  console.log(__filename, res, 'ressss')
+  console.log('git submodule add success', res)
 }).catch((err) => {
-  console.log(__filename, err, 'error')
+  console.log('git submodule add fail', err)
 })
 ```
 
+#### License
+---
+Licensed under MIT
 
 
 
