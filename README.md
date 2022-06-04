@@ -31,6 +31,25 @@ subInstance.add({
 }).catch((err) => {
   console.log('git submodule add fail', err)
 })
+
+// parse .gitmodules file content output object
+const content = `
+      [submodule "testProject"]
+        path = testProject
+        url = git@github.com:koajs/koa.git
+        branch = master
+      `;
+const obj = subInstance.parse(content)
+
+// object config format in .gitmodules
+const contentObj = {
+  testProject: {
+    path: 'testProject',
+    url: 'git@github.com:koajs/koa.git',
+    branch: 'master'
+  }
+}
+const gitSubStr = subInstance.stringify(contentObj)
 ```
 
 #### License
